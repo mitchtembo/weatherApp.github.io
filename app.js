@@ -29,13 +29,13 @@ const updateUI = async (data) => {
  </div>`;
 
  // DAY OR NIGHT IMG
- const setImgSrc = weather.IsDayTime ? 'images/day.svg' : 'images/night.svg';
+ const setImgSrc = weather.IsDayTime ? '/day.svg' : '/night.svg';
  cardIMG.setAttribute('src',setImgSrc);
 
 
  // UPDATE icon IMAGE
    
- icon.setAttribute('src',`images/icons/${weather.WeatherIcon}.svg`)
+ icon.setAttribute('src',`/icons/${weather.WeatherIcon}.svg`)
  // show UI
  if(card.classList.contains('d-none')) {
   card.classList.remove('d-none');
