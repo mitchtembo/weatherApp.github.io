@@ -35,7 +35,7 @@ const updateUI = async (data) => {
 
  // UPDATE icon IMAGE
    
- icon.setAttribute('src',`/icons/${weather.WeatherIcon}.svg`)
+ icon.setAttribute('src',`icon${weather.WeatherIcon}.svg`)
  // show UI
  if(card.classList.contains('d-none')) {
   card.classList.remove('d-none');
