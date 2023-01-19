@@ -1,5 +1,5 @@
 const getCity = async (city) => {
-  const base = "http://dataservice.accuweather.com/locations/v1/cities/search";
+  const base = "https://dataservice.accuweather.com/locations/v1/cities/search";
   
   const apiKey = "eShyt8sYc9vNJnoKsuZKge3cPvfbcWl7";
 
@@ -29,7 +29,7 @@ const cityCondition = async (id) => {
 
   //let locationKey = await getCity('pretoria');
 
-  const base = `http://dataservice.accuweather.com/currentconditions/v1/${id}`;
+  const base = `https://dataservice.accuweather.com/currentconditions/v1/${id}`;
 
   const apiKey = "eShyt8sYc9vNJnoKsuZKge3cPvfbcWl7"
   const response = await axios.get(base ,{
