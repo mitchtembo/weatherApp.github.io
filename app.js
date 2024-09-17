@@ -29,7 +29,7 @@ const updateUI = async (data) => {
  </div>`;
 
  // DAY OR NIGHT IMG
- const setImgSrc = weather.IsDayTime ? "day.svg" : "night.svg";
+ const setImgSrc = weather.IsDayTime ? /icons/ + "day.svg" : /icons/ +"night.svg";
  cardIMG.setAttribute('src',setImgSrc);
 
 
